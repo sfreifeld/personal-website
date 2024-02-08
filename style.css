@@ -1,3 +1,42 @@
 body {
-    background: blue;
+    background: rgb(251, 215, 247);
+    color: rgb(59, 59, 249);
   }
+
+.hero {
+    margin: 10% ;
+    font-family: "Syne", sans-serif;
+    font-size: 25px;
+    
+}
+
+
+.hero h1 {
+    font-size: 55px;
+    
+}
+
+.hero button {
+    font-family: "Inter";
+    transition-duration: 0.4s;
+    border: none;
+    background-color:rgb(59, 59, 249);
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 20px;
+    color: rgb(223, 225, 251);
+}
+
+.hero button.selected {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 4px 10px 0 rgba(0,0,0,0.19);
+    background-color: rgb(132, 132, 249);
+}
+
+.hero button:hover {
+    background-color: rgb(132, 132, 249);
+}
+
+#experience {
+    font-family: "Inter";
+}
