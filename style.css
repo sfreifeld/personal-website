@@ -24,9 +24,14 @@ body {
     }
   }
   
-  .slide-in {
+  .slide-in-first {
     opacity: 0;
     animation: 1s ease-out 1.5s 1 slideInFromLeft forwards;
+  }
+
+  .slide-in {
+    opacity: 0;
+    animation: 1s ease-out 0s 1 slideInFromLeft forwards;
   }
 
 
