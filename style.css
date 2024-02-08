@@ -1,7 +1,34 @@
 body {
     background: rgb(251, 215, 247);
     color: rgb(59, 59, 249);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
   }
+  
+  .fade-in {
+    animation: 2.5s ease-out 0s 1 fadeIn;
+  }
+
+  
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .slide-in {
+    opacity: 0;
+    animation: 1s ease-out 1.5s 1 slideInFromLeft forwards;
+  }
+
 
 .hero {
     margin: 10% ;
