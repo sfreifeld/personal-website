@@ -104,8 +104,8 @@ border: 1px solid#F943C9;
 box-shadow: 0 0 5px #F943C9, 0 0 5px #F943C9 inset;
 z-index: 1;
 margin: 10px;
-width: 200px;
-height: 50px;
+width: 150px;
+height: 20px;
 padding: 10px 25px;
 font-family: 'Inter', sans-serif;
 font-weight: 200;
@@ -115,6 +115,7 @@ cursor: pointer;
 transition: all 0.3s ease;
 position: relative;
 display: inline-block;
+text-decoration: none;
 }
 
 .button-resume:after {
