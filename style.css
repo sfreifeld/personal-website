@@ -14,10 +14,14 @@ section {
   scroll-snap-align: start;
 }
 
+#myWork {
+  height:fit-content;
+}
+
 #video-background {
-  position: absolute;
-  right: 0;
-  bottom: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -34,6 +38,10 @@ section {
   
   .fade-in {
     animation: 2.5s ease-out 0s 1 fadeIn;
+  }
+
+  .fade-in-fast {
+    animation: 1s ease-out 0s 1 fadeIn;
   }
 
   
@@ -157,12 +165,66 @@ top: 2px;
 }
 
 #myWork {
-  background-color: pink;
+  background-color: rgb(230, 224, 251);
   z-index: 1;
 }
 
 .home-container {
   margin-top: 200px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 20px;
+  padding: 20px;
+  width: 80%;
+  min-height: 200px;
+  border-radius: 10px;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s;
+  background: radial-gradient(#76b2fe, #b69efe);
+}
+
+.card:hover {
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+  transform: scale(1.01);
+}
+
+
+.card__title {
+  font-family: "Syne", sans-serif;
+  font-weight: 600;
+  font-size: 45px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.card p {
+font-family: 'Inter', sans-serif;
+font-weight: 400;
+font-size: 16px;
+}
+
+.card__link {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+
+.projectImg {
+  width: 300px;
+  margin-right: 20px;
+}
+
+.cardInfo {
+  overflow: hidden; /* Keep content from spilling out during transition */
+  transition: opacity 0.5s ease; /* Smooth transition for opacity */
+}
+
+#construction {
+  color: black;
 }
 
 
