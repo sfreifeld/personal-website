@@ -6,13 +6,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://kit.fontawesome.com/186a793aec.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Syne:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600&display=swap" rel="stylesheet">  
     <title>My Personal Website</title>
   </head>
   <body>    
     <section class="hero">
-      <div id="video-background">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin:auto;background:#07021c;display:block;z-index:1;position:relative" width="1511" height="762" preserveAspectRatio="xMidYMid" viewBox="0 0 1511 762">
+      <div id="video-background" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin:auto;background:#07021c;display:block;z-index:1;position:relative" width="100%" height="100%" preserveAspectRatio="xMidYMid" viewBox="0 0 1511 762">
           <g transform="translate(755.5,381) scale(1,1) translate(-755.5,-381)"><defs><filter id="blur-bex1fajljgu-1" x="-1" y="-1" width="3" height="3">
             <feGaussianBlur stdDeviation="3"></feGaussianBlur>
           </filter><filter id="blur-bex1fajljgu-2" x="-1" y="-1" width="3" height="3">
@@ -153,19 +154,24 @@
           </svg>
       </div>
       <div class="home-container">
-      <h1 class="fade-in">Hi there, I'm <span id="gradient">Sabrina (Sabfry) </span>👋🏻</h1>
-      <p id="bio" class="slide-in-first">A data analyst turned software developer living in Denver.</p>
-      <p class="slide-in-first"> <span id="gradient-small">Feel free to scroll down to see some of my latest work!</p></span>
-      <a href="./assets/resume_sabrinafreifeld.pdf" class="button-resume" target="_blank" role="button" download="resume_sabrinafreifeld.pdf">Download Resume</a>
-      <br>
-      <a class="fa-brands fa-linkedin fa-2xl" href="https://www.linkedin.com/in/sabrinafreifeld/" target="_blank"></a>
-      <a class="fa-brands fa-github  fa-2xl" href="https://github.com/sfreifeld" target="_blank" ></a>
-      <a class="fa-brands fa-square-twitter  fa-2xl" href="https://twitter.com/sabfry" target="_blank"></a>
-    </div>
+        <h1 class="fade-in">Hi there, I'm <span id="gradient">Sabrina (Sabfry) </span>👋🏻</h1>
+        <p id="bio" class="slide-in-first">A data analyst turned software developer living in Denver.</p>
+        <p class="slide-in-first"> <span id="gradient-small">Feel free to scroll down to see some of my latest work!</p></span>
+        <a href="./assets/resume_sabrinafreifeld.pdf" class="button-resume" target="_blank" role="button" download="resume_sabrinafreifeld.pdf">Download Resume</a>
+        <br>
+        <a class="fa-brands fa-linkedin fa-2xl" href="https://www.linkedin.com/in/sabrinafreifeld/" target="_blank"></a>
+        <a class="fa-brands fa-github  fa-2xl" href="https://github.com/sfreifeld" target="_blank" ></a>
+        <a class="fa-brands fa-square-twitter  fa-2xl" href="https://twitter.com/sabfry" target="_blank"></a>
+      </div>
     </section>
     <section id="myWork">
-      <h2> Under Construction :-) </h2>
+      <div id="projectContainer"></div>
+      <br>
+      <br>
     </section>
-    <script src="script.js"></script>
+    <section id="end">
+      <h2 id="construction"> UNDER CONSTRUCTION</h2>
+    </section>
+    <script defer src="script.js"></script>
   </body>
 </html>
