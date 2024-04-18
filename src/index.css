@@ -1,13 +1,128 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.fade-in {
+  animation: 2.5s ease-out 0s 1 fadeIn;
 }
+
+.fade-in-fast {
+  animation: 1s ease-out 0s 1 fadeIn;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+.slide-in-first {
+  opacity: 0;
+  animation: 1s ease-out 1.5s 1 slideInFromLeft forwards;
+}
+
+.slide-in {
+  opacity: 0;
+  animation: 1s ease-out 0s 1 slideInFromLeft forwards;
+}
+
+#gradient { 
+  background: #F943C9;
+  background: linear-gradient(to right, #F943C9 0%, #1760f3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: fit-content;
+}
+
+.button-resume {
+  color: #F943C9;
+  border: 1px solid #F943C9; /* Fixed typo */
+  box-shadow: 0 0 5px #F943C9, 0 0 5px #F943C9 inset;
+  z-index: 1;
+  min-width: 150px; /* Use min-width for flexibility */
+  padding: 10px 25px; /* Adjust padding as needed */
+  font-family: 'Inter', sans-serif;
+  font-weight: 200;
+  font-size: 16px; /* Consider using responsive units like 'em' or 'rem' */
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block; /* This is good for flexibility */
+  text-decoration: none;
+}
+
+.button-resume:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background: #F943C9;
+  box-shadow: 0 0 20px #F943C9;
+  transition: all 0.3s ease;
+}
+
+.button-resume:hover {
+  color: #fff;
+}
+
+.button-resume:hover:after {
+  left: 0;
+  width: 100%;
+}
+
+.button-resume:active {
+  top: 2px;
+}
+
+.fa-brands {
+  color: rgb(87, 63, 100);
+  
+  margin: 20px 10px 10px 10px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+
+}
+
+.fa-brands:hover {
+  color: #370f74;
+}
+
+.card {
+  width: 80%;
+  min-height: 200px;
+  border-radius: 10px;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s;
+  background: radial-gradient(#76b2fe, #b69efe);
+  height: auto;
+}
+
+.card:hover {
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+  transform: scale(1.01);
+}
+
+.shadow-no-right {
+
+  box-shadow: -5px 5px 15px 5px rgba(0, 0, 0, 0.1);
+  clip-path: inset(10px 20px -15px -15px)
+}
+
+
+
