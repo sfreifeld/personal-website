@@ -154,7 +154,7 @@ function Home() {
                 <p id="bio" className="slide-in-first font-light font-paragraph text-2xl tracking-wide ">A data analyst turned software developer living in Denver.</p>
                 <p id="scroll" className="slide-in-first font-light font-paragraph text-2xl tracking-wide"><span id="gradient"> Feel free to scroll down to see some of my latest work!</span></p>
                 <div className="mt-6">
-                    <a href="./assets/resume2024.pdf" className="button-resume tracking-wide mt-8" target="_blank" role="button" download="resume_sabrinafreifeld.pdf">Download Resume</a>
+                    <a href="./assets/resume2024.pdf" className="button-resume tracking-wide mt-8" target="_blank" role="button" download="resume2024.pdf.pdf">Download Resume</a>
                 </div>
                 <div className="icon-container flex space-x-4">
                     <a href="https://www.linkedin.com/in/sabrinafreifeld/" target="_blank">
