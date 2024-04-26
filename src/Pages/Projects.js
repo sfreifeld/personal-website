@@ -51,7 +51,7 @@ const projects = [ {
     icons: [nodeIcon, openaiIcon, pythonIcon, flaskIcon, jqIcon ]
     },
     {title: "Raspberry Pi Powered Smart Mirror",
-    s_description: "WordWise was an educational iPhone app developed with SwiftUI, utilizing the Wordnik Word of the Day API to allow users to learn new words daily through an interactive swipe interface. Although no longer available on the App Store, the project was instrumental in enhancing my expertise with SwiftUI and the Model-View-ViewModel (MVVM) paradigm, refining my skills in mobile app development.",
+    s_description: "The Raspberry Pi Smart Mirror project combines technology and design to create a functional mirror that displays real-time information using a Raspberry Pi 3 and MagicMirror² platform. It involves programming in Python and constructing a custom wooden frame for the mirror and monitor, enhancing both technical and design skills.",
     l_description: "The Raspberry Pi Smart Mirror project integrates computer science and woodworking skills to construct an interactive mirror displaying real-time data such as weather, news, and compliments. Utilizing a Raspberry Pi 3, the system is programmed in Python and Linux, managing data from the MagicMirror² software after installation via scripted commands. The hardware assembly involves crafting a wooden frame to encase a monitor positioned behind a two-way mirror, with detailed steps to customize both the software modules and the physical setup to accommodate the user's environment and preferences.  \n For a detailed guide on building your own Raspberry Pi Smart Mirror, you can visit the project page on Instructables here.",
     image: image6,
     icons: [rpiIcon, pythonIcon ]

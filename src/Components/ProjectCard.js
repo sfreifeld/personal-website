@@ -25,7 +25,7 @@ function ProjectCard({ project }) {
 
     return (
         <div className="card flex items-center justify-start m-5 p-5 w-4/5 min-h-[200px]">
-            <img className="projectImg w-1/4 m-5 max-h-96" src={project.image}></img>
+            <img className="projectImg w-1/4 m-5 max-h-96" alt="project" src={project.image}></img>
             <div className="cardInfo">
                 <h2 className="cardTitle font-heading text-3xl text-purewhite">{project.title}</h2>
                 {!isReadMoreShown && (

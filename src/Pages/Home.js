@@ -154,12 +154,18 @@ function Home() {
                 <p id="bio" className="slide-in-first font-light font-paragraph text-2xl tracking-wide ">A data analyst turned software developer living in Denver.</p>
                 <p id="scroll" className="slide-in-first font-light font-paragraph text-2xl tracking-wide"><span id="gradient"> Feel free to scroll down to see some of my latest work!</span></p>
                 <div className="mt-6">
-                    <a href="./assets/resume_sabrinafreifeld.pdf" className="button-resume tracking-wide mt-8" target="_blank" role="button" download="resume_sabrinafreifeld.pdf">Download Resume</a>
+                    <a href="./assets/resume2024.pdf" className="button-resume tracking-wide mt-8" target="_blank" role="button" download="resume_sabrinafreifeld.pdf">Download Resume</a>
                 </div>
                 <div className="icon-container flex space-x-4">
-                    <FontAwesomeIcon icon={faLinkedin} size="3x" className='fa-brands' href="https://www.linkedin.com/in/sabrinafreifeld/" target="_blank" />
-                    <FontAwesomeIcon icon={faGithub} size="3x" className='fa-brands' href="https://github.com/sfreifeld" target="_blank"  />
-                    <FontAwesomeIcon icon={faSquareTwitter} size="3x" className='fa-brands' href="https://twitter.com/sabfry" target="_blank" />
+                    <a href="https://www.linkedin.com/in/sabrinafreifeld/" target="_blank">
+                        <FontAwesomeIcon icon={faLinkedin} size="3x" className='fa-brands' />
+                    </a>
+                    <a href="https://github.com/sfreifeld" target="_blank">
+                        <FontAwesomeIcon icon={faGithub} size="3x" className='fa-brands' />
+                    </a>
+                    <a href="https://twitter.com/sabfry" target="_blank">
+                        <FontAwesomeIcon icon={faSquareTwitter} size="3x" className='fa-brands' />
+                    </a>
                 </div>
             </div>
         </section>
