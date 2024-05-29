@@ -34,6 +34,8 @@ function ProjectCard({ project }) {
                 <animated.div style={expandAnimation}>
                     {isReadMoreShown && (
                         <>
+                        <br/>
+                        <a className='text-purewhite underline' href={project.website}>{project.website}</a>
                         {project.l_description.split("\n").map((paragraph, index) => (
                             <p key={index} className="additionalTextHidden text-purewhite font-paragraph mt-3">{paragraph}</p>
                         ))}
