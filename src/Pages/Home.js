@@ -151,7 +151,7 @@ function Home() {
             </div>
             <div className="home-container text-white flex flex-col items-center justify-center space-y-6 mt-10">
                 <h1 id="name" className="fade-in text-6xl font-inter font-light font-paragraph mb-5 tracking-wide">Hi there, I'm <span id="gradient" className="font-bold font-heading">Sabrina (Sabfry) </span>👋🏻</h1>
-                <p id="bio" className="slide-in-first font-light font-paragraph text-2xl tracking-wide ">A data analyst turned software developer living in Denver.</p>
+                <p id="bio" className="slide-in-first font-light font-paragraph text-2xl tracking-wide ">A data engineer turned software developer living in Denver.</p>
                 <p id="scroll" className="slide-in-first font-light font-paragraph text-2xl tracking-wide"><span id="gradient"> Feel free to scroll down to see some of my latest work!</span></p>
                 <div className="mt-6">
                     <a href="/SEResume_sabrina_freifeld.docx" className="button-resume tracking-wide mt-8" target="_blank" role="button">Download Resume</a>
